@@ -21,3 +21,5 @@ class Surveys {
         }
     }
 }
+
+export { Surveys }
