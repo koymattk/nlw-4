@@ -1,10 +1,12 @@
 import 'reflect-metadata';
-import './database';
+import createConnection from './database';
 import express from 'express';
 import { router } from './router';
 
+createConnection()
 const app = express();
 
 app.use(express.json());
 app.use(router);
-app.listen(3000, () => {console.log("server is running !")});
+
+export default app
