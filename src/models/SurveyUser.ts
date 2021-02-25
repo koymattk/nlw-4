@@ -1,7 +1,7 @@
 import { PrimaryColumn, Column, CreateDateColumn, Entity } from 'typeorm'
 import { v4 as uuid} from 'uuid'
 
-@Entity("survey_user")
+@Entity("surveys_users")
 class SurveyUser {
     @PrimaryColumn()
     readonly id: string;

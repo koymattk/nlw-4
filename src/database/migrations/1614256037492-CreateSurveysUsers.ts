@@ -17,7 +17,7 @@ export class CreateSurveysUsers1614256037492 implements MigrationInterface {
                     type:"uuid"
                 },
                 {
-                    name:"surveys_id",
+                    name:"survey_id",
                     type: "uuid"
                 },
                 {
@@ -42,9 +42,9 @@ export class CreateSurveysUsers1614256037492 implements MigrationInterface {
                 },
                 {
                     name:"FKSurvey",
-                    referencedTableName:"users",
+                    referencedTableName:"surveys",
                     referencedColumnNames:["id"],
-                    columnNames:["user_id"],
+                    columnNames:["survey_id"],
                     onDelete:"CASCADE",
                     onUpdate:"CASCADE"
                 }
